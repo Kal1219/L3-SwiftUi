@@ -7,20 +7,30 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+struct ContentView: View
+{
+    var body: some View
+    {
+        
+        VStack
+        {
+            Image("onePiece")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .cornerRadius(15)
+            
+            Text("Esta imagen está chingona")
+            Text("Enfócate en esta imagen chingona BROU!")
         }
-        .padding()
+        
+        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
+struct ContentView_Previews: PreviewProvider
+{
+    static var previews: some View
+    {
         ContentView()
     }
 }
