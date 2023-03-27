@@ -62,7 +62,7 @@ struct ContentView: View
                 
             }
             .padding()
-            .background(Rectangle().foregroundColor(.red).shadow(radius: 15))
+            .background(Rectangle().foregroundColor(.white).shadow(radius: 15))
             .cornerRadius(15)
             .padding()
         }
