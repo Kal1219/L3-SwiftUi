@@ -12,15 +12,17 @@ struct ContentView: View
     var body: some View
     {
         
-        VStack
+        VStack(alignment: .leading, spacing: 20.0)
         {
             Image("onePiece")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(15)
             
-            Text("Esta imagen está chingona")
-            Text("Enfócate en esta imagen chingona BROU!")
+            Text("Capítulo 1045 de One Piece")
+                .font(.title)
+                .fontWeight(.bold)
+            Text("Los Mugiwaras intentan defenderse de....")
         }
         
         
