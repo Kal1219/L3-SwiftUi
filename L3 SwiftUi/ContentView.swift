@@ -19,9 +19,20 @@ struct ContentView: View
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(15)
             
-            Text("Capítulo 1045 de One Piece")
-                .font(.title)
-                .fontWeight(.bold)
+            HStack
+            {
+                Text("Capítulo 1045")
+                    .font(.title)
+                    .fontWeight(.bold)
+                
+                Image(systemName: "star.fill")
+                Image(systemName: "star.fill")
+                Image(systemName: "star.fill")
+                Image(systemName: "star.fill")
+                Image(systemName: "star.leadinghalf.filled")
+            }
+            
+            
             Text("Los Mugiwaras intentan defenderse de....")
         }
         
