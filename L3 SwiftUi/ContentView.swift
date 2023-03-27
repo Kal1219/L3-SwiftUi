@@ -25,15 +25,37 @@ struct ContentView: View
                     .font(.title)
                     .fontWeight(.bold)
                 
-                Image(systemName: "star.fill")
-                Image(systemName: "star.fill")
-                Image(systemName: "star.fill")
-                Image(systemName: "star.fill")
-                Image(systemName: "star.leadinghalf.filled")
+                Spacer()
+                
+                VStack
+                {
+                    HStack
+                    {
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.fill")
+                        Image(systemName: "star.leadinghalf.filled")
+                    }
+                    Text("(Reviews361)")
+                }
+                .foregroundColor(.orange)
+                .font(.caption)
             }
             
             
             Text("Los Mugiwaras intentan defenderse de....")
+            HStack
+            {
+                Spacer()
+                Image(systemName: "house.circle.fill")
+                Image(systemName: "flag.checkered.circle")
+                Image(systemName: "mic.and.signal.meter.fill")
+                Image(systemName: "square.filled.on.square")
+            }
+            .foregroundColor(.gray)
+            .font(.caption)
+            
         }
         
         
