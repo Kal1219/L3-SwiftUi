@@ -12,51 +12,62 @@ struct ContentView: View
     var body: some View
     {
         
-        VStack(alignment: .leading, spacing: 20.0)
+        ZStack
         {
-            Image("onePiece")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .cornerRadius(15)
-            
-            HStack
+            Color(.systemCyan)
+                .ignoresSafeArea()
+            VStack(alignment: .leading, spacing: 20.0)
             {
-                Text("Capítulo 1045")
-                    .font(.title)
-                    .fontWeight(.bold)
+                Image("onePiece")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(15)
                 
-                Spacer()
-                
-                VStack
+                HStack
                 {
-                    HStack
+                    Text("Capítulo 1045")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    
+                    Spacer()
+                    
+                    VStack
                     {
-                        Image(systemName: "star.fill")
-                        Image(systemName: "star.fill")
-                        Image(systemName: "star.fill")
-                        Image(systemName: "star.fill")
-                        Image(systemName: "star.leadinghalf.filled")
+                        HStack
+                        {
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.leadinghalf.filled")
+                        }
+                        Text("(Reviews:361)")
                     }
-                    Text("(Reviews361)")
+                    .foregroundColor(.orange)
+                    .font(.caption)
                 }
-                .foregroundColor(.orange)
+                
+                
+                Text("Los Mugiwaras intentan defenderse de....")
+                HStack
+                {
+                    Spacer()
+                    Image(systemName: "house.circle.fill")
+                    Image(systemName: "flag.checkered.circle")
+                    Image(systemName: "mic.and.signal.meter.fill")
+                    Image(systemName: "square.filled.on.square")
+                }
+                .foregroundColor(.gray)
                 .font(.caption)
+                
             }
-            
-            
-            Text("Los Mugiwaras intentan defenderse de....")
-            HStack
-            {
-                Spacer()
-                Image(systemName: "house.circle.fill")
-                Image(systemName: "flag.checkered.circle")
-                Image(systemName: "mic.and.signal.meter.fill")
-                Image(systemName: "square.filled.on.square")
-            }
-            .foregroundColor(.gray)
-            .font(.caption)
-            
+            .padding()
+            .background(Rectangle().foregroundColor(.red).shadow(radius: 15))
+            .cornerRadius(15)
+            .padding()
         }
+        
+        
         
         
     }
