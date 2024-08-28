@@ -66,10 +66,6 @@ struct ContentView: View
             .cornerRadius(15)
             .padding()
         }
-        
-        
-        
-        
     }
 }
 
